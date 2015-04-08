@@ -16,7 +16,6 @@ RUN sudo dpkg -i $CUDA_DEB
 
 RUN rm $CUDA_DEB
 
-RUN dpkg-reconfigure dictionaries-common
 RUN apt-get update
 RUN apt-get install -y cuda
 
