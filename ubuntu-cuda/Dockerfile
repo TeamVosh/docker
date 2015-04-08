@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -q -y \
   wget \
   build-essential
 
-RUN wget CUDA_DEB
+RUN wget $CUDA_DEB
 
 RUN sudo dpkg -i cuda-repo-ubuntu1404_7.0-28_amd64.deb
 
