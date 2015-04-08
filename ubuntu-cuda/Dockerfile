@@ -16,7 +16,8 @@ RUN sudo dpkg -i $CUDA_DEB
 
 RUN rm $CUDA_DEB
 
-RUN apt-get update && apt-get install -q -y cuda
+RUN apt-get update
+RUN apt-get install -y cuda
 
 # Ensure the CUDA libs and binaries are in the correct environment variables
 ENV LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64
