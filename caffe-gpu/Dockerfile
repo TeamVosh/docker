@@ -1,4 +1,4 @@
-FROM tleyden5iwx/ubuntu-cuda
+FROM tonsoffun/ubuntu-cuda
 
 MAINTAINER Traun Leyden <traun.leyden@gmail.com>
 
